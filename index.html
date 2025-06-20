@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>상품 목록</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>🛒 상품 목록</h2>
+
+  <!-- 조작 영역 -->
+  <div class="controls">
+    <input type="text" id="search-input" placeholder="상품명을 검색하세요" />
+    <button id="search-btn">검색</button>
+    <button id="sort-price">가격순 정렬</button>
+    <button id="sort-name">가나다순 정렬</button>
+    <button id="del-btn">삭제</button>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="new-title" placeholder="상품명 입력" />
+    <input type="number" id="new-price" placeholder="가격 입력" />
+    <button id="add-product">➕ 상품 추가</button>
+  </div>
+
+  <!-- 상품 카드 목록 -->
+  <div class="row" id="product-list"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
