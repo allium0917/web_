@@ -1,9 +1,9 @@
 // 상품 데이터
 let products = [
   { title: '수박바', price: 60000, count: 3 },
-  { title: '와', price: 120000, count: 3 },
-  { title: '요맘때 딸기', price: 30000, count: 3 },
-  { title: '거북알', price: 5000, count: 3 }
+  { title: '와', price: 120000, count: 5 },
+  { title: '요맘때 딸기', price: 30000, count: 10 },
+  { title: '거북알', price: 5000, count: 2 }
 ];
 
 // HTML에 상품을 렌더링하는 함수
@@ -87,7 +87,7 @@ document.getElementById('add-product').addEventListener('click', function () {
     return;
   }
 
-  products.push({ title, price, count: 3 });
+  products.push({ title, price });
   renderProducts(products);
 
   document.getElementById('new-title').value = '';
